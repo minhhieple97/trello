@@ -1,6 +1,7 @@
 module.exports = {
   env: { browser: true, es2020: true, node: true },
   extends: [
+    'prettier',
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
@@ -11,7 +12,8 @@ module.exports = {
   plugins: [
     'react',
     'react-hooks',
-    'react-refresh'
+    'react-refresh',
+    'prettier'
   ],
   rules: {
     'react-refresh/only-export-components': 'warn',
